@@ -1048,7 +1048,7 @@
 
 				// Create the AJAX settings
 				var settings = {
-					"url": "http://localhost:5001/api/users/",
+					"url": "/api/users/",
 					"method": "POST",
 					"timeout": 0,
 					"headers": {
@@ -1084,7 +1084,7 @@
 
 				// Create the AJAX settings
 				var settings = {
-					"url": "http://localhost:5001/api/users/login?email=" + email + "&password=" + password,
+					"url": "/api/users/login?email=" + email + "&password=" + password,
 					"method": "POST",
 					"timeout": 0,
 					"headers": {
@@ -1136,7 +1136,7 @@
 		       // Function to fetch and display products
 		       function loadProducts() {
 		           $.ajax({
-		               url: 'http://localhost:5001/api/meals/getbyflag/Popular', // Replace with your API endpoint
+		               url: '/api/meals/getbyflag/Popular', // Replace with your API endpoint
 		               method: 'GET',
 		               success: function (response) {
 		                   let products = response;
@@ -1187,7 +1187,7 @@
 		   		       // Function to fetch and display products
 		   		       function loadProductsMenu() {
 		   		           $.ajax({
-		   		               url: 'http://localhost:5001/api/meals/getbyflag/Menu', // Replace with your API endpoint
+		   		               url: '/api/meals/getbyflag/Menu', // Replace with your API endpoint
 		   		               method: 'GET',
 		   		               success: function (response) {
 		   		                   let products = response;
@@ -1239,7 +1239,7 @@
 				   		   		       // Function to fetch and display products
 				   		   		       function loadProductsMenuOne() {
 				   		   		           $.ajax({
-				   		   		               url: 'http://localhost:5001/api/meals/getbyflag/MenuOne', // Replace with your API endpoint
+				   		   		               url: '/api/meals/getbyflag/MenuOne', // Replace with your API endpoint
 				   		   		               method: 'GET',
 				   		   		               success: function (response) {
 				   		   		                   let products = response;

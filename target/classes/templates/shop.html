@@ -438,7 +438,7 @@
 
 			<script>
 
-				var path = "http://localhost:5001/";
+				var path = "/";
 				var selectedPath = new URL(window.location.href).pathname;
 				var selectedMenuPath = '';
 
@@ -701,7 +701,7 @@
 					// Function to fetch and display products
 					function loadProducts(orderby = 'menu_order') {
 						$.ajax({
-							url: 'http://localhost:5001/api/meals/category/' + selectedMenuPath, // Replace with your API endpoint
+							url: '/api/meals/category/' + selectedMenuPath, // Replace with your API endpoint
 							method: 'GET',
 							data: {sortBy: orderby}, // Send the sorting parameter
 							success: function (response) {
