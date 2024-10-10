@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<title>Hyderabad Biryani & Grill</title>
+	<meta name="author" content="Restar" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+	<link rel="manifest" href="assets/img/favicons/manifest.json" />
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png" />
+	<meta name="theme-color" content="#ffffff" />
+	<link rel="preconnect" href="https://fonts.googleapis.com/" />
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;family=ZCOOL+XiaoWei&amp;display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="assets/css/app.min.css" />
+	<link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<style>
+		.collapsible {
+			background-color: rgb(223, 187, 125);
+			color: white;
+			cursor: pointer;
+			padding: 10px;
+			width: 100%;
+			height: 80px;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 25px;
+			margin-bottom: 20px;
+		}
+
+		.collapsible.active,
+		.collapsible:hover {
+			background-color: #ccc;
+		}
+
+		.collapsible-content {
+			display: none;
+			overflow: hidden;
+			padding: 0 18px;
+			background-color: #f9f9f9;
+		}
+
+		.meal {
+			display: flex;
+			align-items: center;
+		}
+
+		.meal img {
+			margin-right: 10px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="has-smooth" id="has_smooth"></div>
+	<div class="sidemenu-wrapper sidemenu-cart">
+		<div class="sidemenu-content">
+			<button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
+			<div class="widget woocommerce widget_shopping_cart">
+				<h3 class="widget_title">Shopping cart</h3>
+				<div class="widget_shopping_cart_content">
+					<ul class="woocommerce-mini-cart cart_list product_list_widget" id="cart-items">
+						<!-- Cart items will be dynamically added here -->
+					</ul>
+					<p class="woocommerce-mini-cart__total total">
+						<strong>Subtotal:</strong> <span class="woocommerce-Price-amount amount"><span
+								class="woocommerce-Price-currencySymbol">$</span><span
+								id="cart-subtotal">0.00</span></span>
+					</p>
+					<p class="woocommerce-mini-cart__buttons buttons"><a href="cart.html" class="th-btn wc-forward">View
+							cart</a> <a href="checkout.html" class="th-btn checkout wc-forward">Checkout</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="sidemenu-wrapper sidemenu-info">
+		<div class="sidemenu-content">
+			<button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
+			<div class="widget">
+				<div class="th-widget-about">
+
+					<div class="Center">
+						<a href="index.html"><img src="assets/img/logonew.png" alt="logo" /></a>
+					</div>
+				</div>
+			</div>
+			<div class="widget">
+				<h3 class="widget_title"><span id="user_name"></h3>
+				<div class="th-widget-contact">
+					<div class="info-box">
+						<h4 class="box-title">Address Location</h4>
+						<div class="box-content">
+							<div class="box-icon"><i class="fas fa-location-dot"></i></div>
+							<p class="box-text"><span id="user_address"></span></p>
+						</div>
+					</div>
+					<div class="info-box">
+						<h4 class="box-title">Phone Number</h4>
+						<div class="box-content">
+							<div class="box-icon"><i class="fas fa-phone"></i></div>
+							<p class="box-text"><a href="#"><span id="user_phoneNumber"></span></a></p>
+						</div>
+					</div>
+					<div class="info-box">
+						<h4 class="box-title">Email address</h4>
+						<div class="box-content">
+							<div class="box-icon"><i class="fas fa-envelope"></i></div>
+							<p class="box-text"><a href="#"><span id="user_email"></span></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="widget">
+				<h3 class="widget_title">Orders</h3>
+				<div class="th-widget-contact">
+					<div class="info-box">
+						<div class="box-content">
+							<div class="box-icon"><i class="fas fa-envelope"></i></div>
+							<p class="box-text"><a href="#"><span id="user_email"></span></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="th-menu-wrapper">
+		<div class="th-menu-area text-center">
+			<button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+			<div class="mobile-logo">
+				<a href="index.html"><img src="assets/img/logonew.png" alt="logo" /></a>
+			</div>
+			<div class="th-mobile-menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="menu-item-has-children">
+						<a href="#">Menus</a>
+						<ul class="sub-menu">
+							<li><a href="../shop.html/soups">SOUPS</a></li>
+							<li><a href="../shop.html/appetizers-vegerarian">APPETIZERS - VEGETARIAN</a>
+							</li>
+							<li><a href="../shop.html/appetizers-non-vegerarian">APPETIZERS -
+									NON-VEGETARIAN</a></li>
+							<li><a href="../shop.html/tandor-veg">TANDOOR (CLAY OVEN)-VEG</a></li>
+							<li><a href="../shop.html/tandoor-non-veg">TANDOOR (CLAY OVEN)-NON-VEG</a>
+							</li>
+							<li><a href="../shop.html/veg-entrees">VEGETARIAN ENTREES</a></li>
+							<li><a href="../shop.html/non-veg-entrees">NON VEGETARIAN ENTREES</a></li>
+							<li><a href="../shop.html/dosa-idli">DOSA AND IDLI </a></li>
+							<li><a href="../shop.html/indo-chinese-veg">INDO-CHINESE -VEG</a></li>
+							<li><a href="../shop.html/indo-chinese-non-veg">INDO-CHINESE-NON VEG</a>
+							</li>
+							<li><a href="../shop.html/indo-chinese-rice">INDO-CHINESE-RICE</a></li>
+							<li><a href="../shop.html/indo-chinese-noodles">INDO-CHINESE-NOODLES</a>
+							</li>
+							<li><a href="../shop.html/indo-chinese-gravy">INDO-CHINESE-GRAVY</a></li>
+							<li><a href="../shop.html/biryani">BIRYANI</a></li>
+							<li><a href="../shop.html/pulav">PULAV</a></li>
+							<li><a href="../shop.html/rice">RICE SPECIALITIES </a></li>
+							<li><a href="../shop.html/breads">BREADS</a></li>
+							<li><a href="../shop.html/deserts">DESSERTS</a></li>
+							<li><a href="../shop.html/beverages">BEVERAGES</a></li>
+							<li><a href="../shop.html/sides">SIDES</a></li>
+						</ul>
+					</li>
+					<li><a href="wishlist.html">Wish List</a></li>
+					<li><a href="orders.html">Orders</a></li>
+					<li><a href="about.html">About us</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<header class="th-header header-layout1">
+		<div class="header-top">
+			<div class="container">
+				<div class="row justify-content-center justify-content-lg-between align-items-center gy-2">
+					<div class="col-auto d-none d-lg-block">
+						<div class="header-links">
+							<ul>
+								<li class="d-none d-xxl-inline-block"><i class="fas fa-location-dot"></i> <a
+										href="#">11705 Jones Bridge Rd Suite C 201, Johns Creek, GA 30005</a></li>
+								<li><i class="fas fa-phone"></i> <a href="tel:+(770) 800-1199">+(770) 800-1199</a></li>
+								<li><i class="fas fa-envelope"></i> <a href="#">info@hydgrill.com</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="sticky-wrapper">
+			<div class="menu-area">
+				<div class="container">
+					<div class="row align-items-center justify-content-between">
+						<div class="col-auto">
+							<div class="header-logo">
+								<a href="index.html"><img src="assets/img/logonew.png" alt="logo" /></a>
+							</div>
+						</div>
+						<div class="col-auto">
+							<nav class="main-menu d-none d-lg-inline-block">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li class="menu-item-has-children">
+										<a href="#">Menus</a>
+										<ul class="sub-menu">
+											<li><a href="../shop.html/soups">SOUPS</a></li>
+											<li><a href="../shop.html/appetizers-vegerarian">APPETIZERS - VEGETARIAN</a>
+											</li>
+											<li><a href="../shop.html/appetizers-non-vegerarian">APPETIZERS -
+													NON-VEGETARIAN</a></li>
+											<li><a href="../shop.html/tandor-veg">TANDOOR (CLAY OVEN)-VEG</a></li>
+											<li><a href="../shop.html/tandoor-non-veg">TANDOOR (CLAY OVEN)-NON-VEG</a>
+											</li>
+											<li><a href="../shop.html/veg-entrees">VEGETARIAN ENTREES</a></li>
+											<li><a href="../shop.html/non-veg-entrees">NON VEGETARIAN ENTREES</a></li>
+											<li><a href="../shop.html/dosa-idli">DOSA AND IDLI </a></li>
+											<li><a href="../shop.html/indo-chinese-veg">INDO-CHINESE -VEG</a></li>
+											<li><a href="../shop.html/indo-chinese-non-veg">INDO-CHINESE-NON VEG</a>
+											</li>
+											<li><a href="../shop.html/indo-chinese-rice">INDO-CHINESE-RICE</a></li>
+											<li><a href="../shop.html/indo-chinese-noodles">INDO-CHINESE-NOODLES</a>
+											</li>
+											<li><a href="../shop.html/indo-chinese-gravy">INDO-CHINESE-GRAVY</a></li>
+											<li><a href="../shop.html/biryani">BIRYANI</a></li>
+											<li><a href="../shop.html/pulav">PULAV</a></li>
+											<li><a href="../shop.html/rice">RICE SPECIALITIES </a></li>
+											<li><a href="../shop.html/breads">BREADS</a></li>
+											<li><a href="../shop.html/deserts">DESSERTS</a></li>
+											<li><a href="../shop.html/beverages">BEVERAGES</a></li>
+											<li><a href="../shop.html/sides">SIDES</a></li>
+										</ul>
+									</li>
+									<li><a href="wishlist.html">Wish List</a></li>
+									<li><a href="orders.html">Orders</a></li>
+									<li><a href="about.html">About us</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-auto">
+							<div class="header-button">
+								<button type="button" class="simple-icon sideMenuToggler"><span class="badge"
+										id="cartItemsSize"></span>
+									<i class="fal fa-cart-shopping"></i></button>
+
+
+								<a href="reservation.html" class="th-btn style4 d-none d-xl-block"
+									style="border-radius:20px">Book A Table</a> <button type="button"
+									class="th-menu-toggle d-block d-lg-none"><i class="far fa-bars"></i></button>
+								<a class="th-btn" href="#popup1" id="login_button" style="border-radius:20px">Login</a>
+
+								<button type="button" id="user_button" class="square-btn sideMenuInfo"><i
+										class="fal fa-user"></i></button>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="smooth-wrapper">
+		<div id="smooth-content">
+			<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
+				<div class="container">
+					<div class="breadcumb-content">
+						<h1 class="breadcumb-title">Orders</h1>
+						<ul class="breadcumb-menu">
+							<li><a href="home-restaurant-shop.html">Home</a></li>
+							<li>Orders</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="th-checkout-wrapper space-top space-extra-bottom">
+				<div class="container">
+
+					<h3 class="mt-4 pt-lg-2">Your Orders</h3>
+					<div id="orders-container"></div>
+
+				</div>
+			</div>
+			<footer class="footer-wrapper footer-layout1" data-bg-src="assets/img/bg/footer_bg_2.jpg">
+				<div class="container z-index-common">
+					<div class="newsletter-wrap">
+						<div class="newsletter-content">
+							<h2 class="sec-title title-ani2 text-white m-0">Subscribe for daily update</h2>
+						</div>
+						<form class="newsletter-form">
+							<div class="form-group"><input class="form-control" type="email" placeholder="Email Address"
+									required="" /></div>
+							<button type="submit" class="th-btn">Subscribe</button>
+						</form>
+					</div>
+				</div>
+				<div class="widget-area">
+					<div class="container">
+						<div class="row justify-content-between">
+							<div class="col-md-6 col-xl-auto">
+								<div class="widget footer-widget" style="margin-top:-20px">
+									<div class="th-widget-about">
+										<div class="about-logo">
+											<a href="index.html"><img src="assets/img/logonew.png" alt="logo" /></a>
+										</div>
+										<p class="about-text">We believe that great food shouldn't break the bank.
+											That's why we offer affordable options without compromising on taste.</p>
+										<div class="info-box">
+											<h4 class="box-title">Address Location</h4>
+											<div class="box-content">
+												<div class="box-icon"><i class="fas fa-location-dot"></i></div>
+												<p class="box-text">11705 Jones Bridge Rd Suite C 201, Johns Creek, GA
+													30005</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-xl-auto">
+								<div class="widget widget_nav_menu footer-widget">
+									<h3 class="widget_title">Quick Links</h3>
+									<div class="menu-all-pages-container">
+										<ul class="menu">
+											<li><a href="about.html">About us</a></li>
+											<li><a href="#">Menus</a></li>
+											<li><a href="shop.html">Shop</a></li>
+											<li><a href="contact.hml">Contact</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-xl-auto">
+								<div class="widget widget_nav_menu footer-widget">
+									<h3 class="widget_title">Food Menu</h3>
+									<div class="menu-all-pages-container">
+										<ul class="menu">
+											<li><a href="shop.html">DOSA AND IDLI </a></li>
+											<li><a href="shop.html">INDO-CHINESE -VEG</a></li>
+											<li><a href="shop.html">INDO-CHINESE-NON VEG</a></li>
+											<li><a href="shop.html">BIRYANI</a></li>
+											<li><a href="shop.html">PULAV</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-xl-auto">
+								<div class="widget widget_download footer-widget">
+									<h4 class="widget_title">Install App</h4>
+									<div class="th-download-widget">
+										<p class="footer-text">From App Store or Google Play</p>
+										<div class="btn-group">
+											<a href="https://www.apple.com/app-store/" class="download-btn"><img
+													src="assets/img/icon/app_store_1.png" alt="icon" /> </a>
+											<a href="https://play.google.com/store/apps" class="download-btn"><img
+													src="assets/img/icon/app_store_2.png" alt="icon" /></a>
+										</div>
+										<p class="mt-30 mb-3">24/7 Support Center</p>
+										<h3 class="box-title"><a href="tel:+19524357106">+(770) 800-1199</a></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copyright-wrap">
+					<div class="container">
+						<div class="row gx-1 gy-2 align-items-center">
+							<div class="col-md-7">
+								<p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2024 <a
+										href="#">Hyderabad Biryani & Grill</a>. All Rights Reserved.</p>
+							</div>
+							<div class="col-md-5 text-center text-md-end">
+								<div class="footer-links">
+									<ul>
+										<li><a href="about.html">Terms & Condition</a></li>
+										<li><a href="about.html">Privacy & Policy</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<div class="scroll-top">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+				style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+			</path>
+		</svg>
+	</div>
+	<script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+	<script src="assets/js/app.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+
+			<div class="wrapper">
+				<div class="title-text">
+					<div class="title login">Login Form</div>
+					<div class="title signup">Signup Form</div>
+				</div>
+				<div class="form-container">
+					<div class="slide-controls">
+						<input type="radio" name="slide" id="login" checked>
+						<input type="radio" name="slide" id="signup">
+						<label for="login" class="slide login">Login</label>
+						<label for="signup" class="slide signup">Signup</label>
+						<div class="slider-tab"></div>
+					</div>
+					<div class="form-inner">
+						<form action="#" class="login">
+							<div class="field">
+								<input type="text" placeholder="Email Address" required>
+							</div>
+							<div class="field">
+								<input type="password" placeholder="Password" required>
+							</div>
+							<div class="pass-link"><a href="#">Forgot password?</a></div>
+							<div class="field btn">
+								<div class="btn-layer"></div>
+								<input type="submit" value="Login">
+							</div>
+							<div class="signup-link">Not a member? <a href="">Signup now</a></div>
+						</form>
+						<form action="#" class="signup">
+							<div class="field">
+								<input type="text" placeholder="Email Address" required>
+							</div>
+							<div class="field">
+								<input type="password" placeholder="Password" required>
+							</div>
+							<div class="field">
+								<input type="password" placeholder="Confirm password" required>
+							</div>
+							<div class="field btn">
+								<div class="btn-layer"></div>
+								<input type="submit" value="Signup">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+			<script>
+
+
+				document.addEventListener('contextmenu', function (event) {
+					event.stopPropagation();
+				}, true);
+
+
+				function getArrayFromLocalStorage(key) {
+					const storedArray = localStorage.getItem(key);
+					return storedArray ? JSON.parse(storedArray) : [];
+				}
+
+				$(document).ready(function () {
+
+					const storedUser = localStorage.getItem("user"); // Retrieve string from localStorage
+
+					if (storedUser) {
+						const parsedUser = JSON.parse(storedUser); // Parse the string back into an object
+
+						if (parsedUser.id > 0) {
+							$("#user_button").show();
+							$("#login_button").hide();
+							$("#user_name").text(parsedUser.name);
+							$("#user_address").text(parsedUser.address);
+							$("#user_phoneNumber").text(parsedUser.phoneNumber);
+							$("#user_email").text(parsedUser.email);
+						}
+					} else {
+						console.log("No user found in localStorage");
+						$("#user_button").hide();
+						$("#login_button").show();
+					}
+				});
+
+				//cart item display
+
+
+				const loginText = document.querySelector(".title-text .login");
+				const loginForm = document.querySelector("form.login");
+				const loginBtn = document.querySelector("label.login");
+				const signupBtn = document.querySelector("label.signup");
+				const signupLink = document.querySelector("form .signup-link a");
+				signupBtn.onclick = (() => {
+					loginForm.style.marginLeft = "-50%";
+					loginText.style.marginLeft = "-50%";
+				});
+				loginBtn.onclick = (() => {
+					loginForm.style.marginLeft = "0%";
+					loginText.style.marginLeft = "0%";
+				});
+				signupLink.onclick = (() => {
+					signupBtn.click();
+					return false;
+				});
+
+				document.addEventListener("DOMContentLoaded", function () {
+					// Get the cart items (including product IDs and quantities) from localStorage
+					let userId = JSON.parse(localStorage.getItem("user")).id;
+
+					// Function to fetch product data from API by productId
+					const fetchProductData = async (productId) => {
+						try {
+							const response = await fetch(`/api/meals/getbyid/${productId}`);
+							return await response.json();
+						} catch (error) {
+							console.error("Error fetching product data:", error);
+						}
+					};
+
+					// Fetch the list of orders based on userId
+					const fetchOrders = async () => {
+						try {
+							const response = await fetch(`/api/orders/getOrderByUser/${userId}`);
+							const orders = await response.json();
+							return orders;
+						} catch (error) {
+							console.error("Error fetching orders:", error);
+						}
+					};
+
+					// Function to display the list of orders in a collapsible format
+					const displayOrders = async () => {
+						const orders = await fetchOrders();
+						const ordersListContainer = document.getElementById("orders-container");
+						ordersListContainer.innerHTML = ""; // Clear previous orders if any
+
+						if (orders && orders.length > 0) {
+							orders.forEach((order, index) => {
+								const orderDate = new Date(order.createdDate).toLocaleString();
+								const orderTotalPrice = order.orderPrice.toFixed(2);
+								const orderDetailsHtml = `
+				                        <div class="woocommerce-form-coupon-toggle">
+				                            <button class="collapsible">Order ${index + 1} - ${orderDate}  <span style="float:right">Total: $${orderTotalPrice}</span></button>
+				                            <div class="order-details-content" style="display: none;">
+				                                <p>Loading meals...</p>
+				                            </div>
+				                        </div>
+				                    `;
+								ordersListContainer.insertAdjacentHTML("beforeend", orderDetailsHtml);
+							});
+
+							// Add click event to each collapsible button
+							document.querySelectorAll('.collapsible').forEach((button, index) => {
+								button.addEventListener('click', async function () {
+									const content = this.nextElementSibling;
+									if (content.style.display === "block") {
+										content.style.display = "none";
+									} else {
+										// Fetch and display meal details when opened
+										const order = orders[index];
+										const orderDetails = JSON.parse(order.orderJson);
+										content.style.display = "block";
+										content.innerHTML = await generateOrderMealsHtml(orderDetails);
+									}
+								});
+							});
+						} else {
+							ordersListContainer.innerHTML = "<p>No orders found for this user.</p>";
+						}
+					};
+
+					// Generate HTML for the meals in the order
+					const generateOrderMealsHtml = async (orderDetails) => {
+						let mealsHtml = ''; // Start with an empty string instead of <ul> for table rows
+						for (let meal of orderDetails) {
+							const product = await fetchProductData(meal.mealId);
+							if (!product) continue;
+
+							const quantity = meal.quantity;
+							const productTotal = product.priceAfterDiscount * quantity;
+							const mealId = meal.mealId;
+
+							const cartItemHTML = `
+							        <tr class="cart_item">
+							            <td data-title="Product" style="border: 2px solid var(--th-border-color); padding: 9px 12px; text-align: center;">
+							                <a class="cart-productimage"><img width="91" height="91" src="${product.strMealThumb}" alt="Image" /></a>
+							            </td>
+							            <td data-title="Name" style="border: 2px solid var(--th-border-color); padding: 9px 12px; text-align: center;"><a class="cart-productname">${product.itemName}</a></td>
+							            <td data-title="Price" style="border: 2px solid var(--th-border-color); padding: 9px 12px; text-align: center;">
+							                <span class="amount">
+							                    <bdi><span>$</span>${product.priceAfterDiscount.toFixed(2)}</bdi>
+							                </span>
+							            </td>
+							            <td data-title="Quantity" style="border: 2px solid var(--th-border-color); padding: 9px 12px; text-align: center;">
+							                <strong class="product-quantity">${quantity}</strong>
+							            </td>
+							            <td data-title="Total" style="border: 2px solid var(--th-border-color); padding: 9px 12px; text-align: center;">
+							                <span class="amount">
+							                    <bdi><span>$</span>${productTotal.toFixed(2)}</bdi>
+							                </span>
+							            </td>
+							        </tr>
+							    `;
+
+							mealsHtml += cartItemHTML; // Append each item's HTML to mealsHtml
+						}
+
+						// Make sure to wrap the rows in a table structure when returning or rendering
+						mealsHtml = `<table class="cart-table">${mealsHtml}</table>`;
+						return mealsHtml;
+
+					};
+
+					// Initialize the orders list
+					displayOrders();
+				});
+
+
+
+
+			</script>
+
+</html>
