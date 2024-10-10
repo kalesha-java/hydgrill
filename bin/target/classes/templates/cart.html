@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<title>Hyderabad Biryani & Grill</title>
+	<meta name="author" content="Restar" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+	<link rel="manifest" href="assets/img/favicons/manifest.json" />
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png" />
+	<meta name="theme-color" content="#ffffff" />
+	<link rel="preconnect" href="https://fonts.googleapis.com/" />
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;family=ZCOOL+XiaoWei&amp;display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="assets/css/app.min.css" />
+	<link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+
+
+</head>
+
+<body>
+	<div class="has-smooth" id="has_smooth"></div>
+	<div class="sidemenu-wrapper sidemenu-cart">
+		<div class="sidemenu-content">
+			<button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
+			<div class="widget woocommerce widget_shopping_cart">
+				<h3 class="widget_title">Shopping cart</h3>
+				<div class="widget_shopping_cart_content">
+					<ul class="woocommerce-mini-cart cart_list product_list_widget" id="cart-items">
+						<!-- Cart items will be dynamically added here -->
+					</ul>
+					<p class="woocommerce-mini-cart__total total">
+						<strong>Subtotal:</strong> <span class="woocommerce-Price-amount amount"><span
+								class="woocommerce-Price-currencySymbol">$</span><span
+								id="cart-subtotal">0.00</span></span>
+					</p>
+					<p class="woocommerce-mini-cart__buttons buttons"><a href="cart.html" class="th-btn wc-forward">View
+							cart</a> <a href="checkout.html" class="th-btn checkout wc-forward">Checkout</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="sidemenu-wrapper sidemenu-info">
+		<div class="sidemenu-content">
+			<button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
+			<div class="widget">
+				<div class="th-widget-about">
+
+					<div class="Center">
+						<a href="index.html"><img src="assets/img/logonew.png" alt="logo" /></a>
+					</div>
+				</div>
+			</div>
+			<div class="widget">
+				<h3 class="widget_title"><span id="user_name"></h3>
+				<div class="th-widget-contact">
+					<div class="info-box">
+						<h4 class="box-title">Address Location</h4>
+						<div class="box-content">
+							<div class="box-icon"><i class="fas fa-location-dot"></i></div>
+							<p class="box-text"><span id="user_address"></span></p>
+						</div>
+					</div>
+					<div class="info-box">
+						<h4 class="box-title">Phone Number</h4>
+						<div class="box-content">
+							<div class="box-icon"><i class="fas fa-phone"></i></div>
+							<p class="box-text"><a href="#"><span id="user_phoneNumber"></span></a></p>
+						</div>
+					</div>
+					<div class="info-box">
+						<h4 class="box-title">Email address</h4>
+						<div class="box-content">
+							<div class="box-icon"><i class="fas fa-envelope"></i></div>
+							<p class="box-text"><a href="#"><span id="user_email"></span></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="widget">
+				<h3 class="widget_title">Orders</h3>
+				<div class="th-widget-contact">
+					<div class="info-box">
+						<div class="box-content">
+							<div class="box-icon"><i class="fas fa-envelope"></i></div>
+							<p class="box-text"><a href="#"><span id="user_email"></span></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="th-menu-wrapper">
+		<div class="th-menu-area text-center">
+			<button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+			<div class="mobile-logo">
+				<a href="index.html"><img src="assets/img/logonew.png" alt="logo" /></a>
+			</div>
+			<div class="th-mobile-menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="menu-item-has-children">
+						<a href="#">Menus</a>
+						<ul class="sub-menu">
+							<li><a href="../shop.html/soups">SOUPS</a></li>
+							<li><a href="../shop.html/appetizers-vegerarian">APPETIZERS - VEGETARIAN</a>
+							</li>
+							<li><a href="../shop.html/appetizers-non-vegerarian">APPETIZERS -
+									NON-VEGETARIAN</a></li>
+							<li><a href="../shop.html/tandor-veg">TANDOOR (CLAY OVEN)-VEG</a></li>
+							<li><a href="../shop.html/tandoor-non-veg">TANDOOR (CLAY OVEN)-NON-VEG</a>
+							</li>
+							<li><a href="../shop.html/veg-entrees">VEGETARIAN ENTREES</a></li>
+							<li><a href="../shop.html/non-veg-entrees">NON VEGETARIAN ENTREES</a></li>
+							<li><a href="../shop.html/dosa-idli">DOSA AND IDLI </a></li>
+							<li><a href="../shop.html/indo-chinese-veg">INDO-CHINESE -VEG</a></li>
+							<li><a href="../shop.html/indo-chinese-non-veg">INDO-CHINESE-NON VEG</a>
+							</li>
+							<li><a href="../shop.html/indo-chinese-rice">INDO-CHINESE-RICE</a></li>
+							<li><a href="../shop.html/indo-chinese-noodles">INDO-CHINESE-NOODLES</a>
+							</li>
+							<li><a href="../shop.html/indo-chinese-gravy">INDO-CHINESE-GRAVY</a></li>
+							<li><a href="../shop.html/biryani">BIRYANI</a></li>
+							<li><a href="../shop.html/pulav">PULAV</a></li>
+							<li><a href="../shop.html/rice">RICE SPECIALITIES </a></li>
+							<li><a href="../shop.html/breads">BREADS</a></li>
+							<li><a href="../shop.html/deserts">DESSERTS</a></li>
+							<li><a href="../shop.html/beverages">BEVERAGES</a></li>
+							<li><a href="../shop.html/sides">SIDES</a></li>
+						</ul>
+					</li>
+					<li><a href="wishlist.html">Wish List</a></li>
+					<li><a href="orders.html">Orders</a></li>
+					<li><a href="about.html">About us</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<header class="th-header header-layout1">
+		<div class="header-top">
+			<div class="container">
+				<div class="row justify-content-center justify-content-lg-between align-items-center gy-2">
+					<div class="col-auto d-none d-lg-block">
+						<div class="header-links">
+							<ul>
+								<li class="d-none d-xxl-inline-block"><i class="fas fa-location-dot"></i> <a
+										href="#">11705 Jones Bridge Rd Suite C 201, Johns Creek, GA 30005</a></li>
+								<li><i class="fas fa-phone"></i> <a href="tel:+(770) 800-1199">+(770) 800-1199</a></li>
+								<li><i class="fas fa-envelope"></i> <a href="#">info@hydgrill.com</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="sticky-wrapper">
+			<div class="menu-area">
+				<div class="container">
+					<div class="row align-items-center justify-content-between">
+						<div class="col-auto">
+							<div class="header-logo">
+								<a href="index.html"><img src="assets/img/logonew.png" alt="logo" /></a>
+							</div>
+						</div>
+						<div class="col-auto">
+							<nav class="main-menu d-none d-lg-inline-block">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li class="menu-item-has-children">
+										<a href="#">Menus</a>
+										<ul class="sub-menu">
+											<li><a href="../shop.html/soups">SOUPS</a></li>
+											<li><a href="../shop.html/appetizers-vegerarian">APPETIZERS - VEGETARIAN</a>
+											</li>
+											<li><a href="../shop.html/appetizers-non-vegerarian">APPETIZERS -
+													NON-VEGETARIAN</a></li>
+											<li><a href="../shop.html/tandor-veg">TANDOOR (CLAY OVEN)-VEG</a></li>
+											<li><a href="../shop.html/tandoor-non-veg">TANDOOR (CLAY OVEN)-NON-VEG</a>
+											</li>
+											<li><a href="../shop.html/veg-entrees">VEGETARIAN ENTREES</a></li>
+											<li><a href="../shop.html/non-veg-entrees">NON VEGETARIAN ENTREES</a></li>
+											<li><a href="../shop.html/dosa-idli">DOSA AND IDLI </a></li>
+											<li><a href="../shop.html/indo-chinese-veg">INDO-CHINESE -VEG</a></li>
+											<li><a href="../shop.html/indo-chinese-non-veg">INDO-CHINESE-NON VEG</a>
+											</li>
+											<li><a href="../shop.html/indo-chinese-rice">INDO-CHINESE-RICE</a></li>
+											<li><a href="../shop.html/indo-chinese-noodles">INDO-CHINESE-NOODLES</a>
+											</li>
+											<li><a href="../shop.html/indo-chinese-gravy">INDO-CHINESE-GRAVY</a></li>
+											<li><a href="../shop.html/biryani">BIRYANI</a></li>
+											<li><a href="../shop.html/pulav">PULAV</a></li>
+											<li><a href="../shop.html/rice">RICE SPECIALITIES </a></li>
+											<li><a href="../shop.html/breads">BREADS</a></li>
+											<li><a href="../shop.html/deserts">DESSERTS</a></li>
+											<li><a href="../shop.html/beverages">BEVERAGES</a></li>
+											<li><a href="../shop.html/sides">SIDES</a></li>
+										</ul>
+									</li>
+									<li><a href="wishlist.html">Wish List</a></li>
+									<li><a href="orders.html">Orders</a></li>
+									<li><a href="about.html">About us</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-auto">
+							<div class="header-button">
+								<button type="button" class="simple-icon sideMenuToggler"><span class="badge"
+										id="cartItemsSize"></span>
+									<i class="fal fa-cart-shopping"></i></button>
+
+
+								<a href="reservation.html" class="th-btn style4 d-none d-xl-block"
+									style="border-radius:20px">Book A Table</a> <button type="button"
+									class="th-menu-toggle d-block d-lg-none"><i class="far fa-bars"></i></button>
+								<a class="th-btn" href="#popup1" id="login_button" style="border-radius:20px">Login</a>
+
+								<button type="button" id="user_button" class="square-btn sideMenuInfo"><i
+										class="fal fa-user"></i></button>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="smooth-wrapper">
+		<div id="smooth-content">
+			<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
+				<div class="container">
+					<div class="breadcumb-content">
+						<h1 class="breadcumb-title">Cart Page</h1>
+						<ul class="breadcumb-menu">
+							<li><a href="index.html">Home</a></li>
+							<li>Cart Page</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="th-cart-wrapper space-top space-extra-bottom">
+				<div class="container">
+					<div class="woocommerce-notices-wrapper">
+						<div class="woocommerce-message">Shipping costs updated.</div>
+					</div>
+					<form action="#" class="woocommerce-cart-form">
+						<table class="cart_table">
+							<thead>
+								<tr>
+									<th class="cart-col-image">Image</th>
+									<th class="cart-col-productname">Product Name</th>
+									<th class="cart-col-price">Price</th>
+									<th class="cart-col-quantity">Quantity</th>
+									<th class="cart-col-total">Total</th>
+									<th class="cart-col-remove">Remove</th>
+								</tr>
+							</thead>
+							<tbody>
+
+							</tbody>
+						</table>
+					</form>
+					<div class="row justify-content-end">
+						<div class="col-md-8 col-lg-7 col-xl-6">
+							<h2 class="h4 summary-title">Cart Totals</h2>
+							<table class="cart_totals">
+								<tbody>
+									<tr>
+										<td>Cart Subtotal</td>
+										<td data-title="Cart Subtotal">
+											<span class="amount">
+												<bdi><span>$</span></bdi>
+											</span>
+										</td>
+									</tr>
+
+								</tbody>
+								<tfoot>
+									<tr class="order-total">
+										<td>Order Total</td>
+										<td data-title="Total">
+											<strong>
+												<span class="amount">
+													<bdi><span>$</span>47</bdi>
+												</span>
+											</strong>
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+							<div class="wc-proceed-to-checkout mb-30"><a href="checkout.html" class="th-btn">Proceed to
+									checkout</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer-wrapper footer-layout1" data-bg-src="assets/img/bg/footer_bg_2.jpg">
+				<div class="container z-index-common">
+					<div class="newsletter-wrap">
+						<div class="newsletter-content">
+							<h2 class="sec-title title-ani2 text-white m-0">Subscribe for daily update</h2>
+						</div>
+						<form class="newsletter-form">
+							<div class="form-group"><input class="form-control" type="email" placeholder="Email Address"
+									required="" /></div>
+							<button type="submit" class="th-btn">Subscribe</button>
+						</form>
+					</div>
+				</div>
+				<div class="widget-area">
+					<div class="container">
+						<div class="row justify-content-between">
+							<div class="col-md-6 col-xl-auto">
+								<div class="widget footer-widget" style="margin-top:-20px">
+									<div class="th-widget-about">
+										<div class="about-logo">
+											<a href="index.html"><img src="assets/img/logonew.png" alt="logo" /></a>
+										</div>
+										<p class="about-text">We believe that great food shouldn't break the bank.
+											That's why we offer affordable options without compromising on taste.</p>
+										<div class="info-box">
+											<h4 class="box-title">Address Location</h4>
+											<div class="box-content">
+												<div class="box-icon"><i class="fas fa-location-dot"></i></div>
+												<p class="box-text">11705 Jones Bridge Rd Suite C 201, Johns Creek, GA
+													30005</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-xl-auto">
+								<div class="widget widget_nav_menu footer-widget">
+									<h3 class="widget_title">Quick Links</h3>
+									<div class="menu-all-pages-container">
+										<ul class="menu">
+											<li><a href="about.html">About us</a></li>
+											<li><a href="#">Menus</a></li>
+											<li><a href="shop.html">Shop</a></li>
+											<li><a href="contact.hml">Contact</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-xl-auto">
+								<div class="widget widget_nav_menu footer-widget">
+									<h3 class="widget_title">Food Menu</h3>
+									<div class="menu-all-pages-container">
+										<ul class="menu">
+											<li><a href="shop.html">DOSA AND IDLI </a></li>
+											<li><a href="shop.html">INDO-CHINESE -VEG</a></li>
+											<li><a href="shop.html">INDO-CHINESE-NON VEG</a></li>
+											<li><a href="shop.html">BIRYANI</a></li>
+											<li><a href="shop.html">PULAV</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-xl-auto">
+								<div class="widget widget_download footer-widget">
+									<h4 class="widget_title">Install App</h4>
+									<div class="th-download-widget">
+										<p class="footer-text">From App Store or Google Play</p>
+										<div class="btn-group">
+											<a href="https://www.apple.com/app-store/" class="download-btn"><img
+													src="assets/img/icon/app_store_1.png" alt="icon" /> </a>
+											<a href="https://play.google.com/store/apps" class="download-btn"><img
+													src="assets/img/icon/app_store_2.png" alt="icon" /></a>
+										</div>
+										<p class="mt-30 mb-3">24/7 Support Center</p>
+										<h3 class="box-title"><a href="tel:+19524357106">+(770) 800-1199</a></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copyright-wrap">
+					<div class="container">
+						<div class="row gx-1 gy-2 align-items-center">
+							<div class="col-md-7">
+								<p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2024 <a
+										href="#">Hyderabad Biryani & Grill</a>. All Rights Reserved.</p>
+							</div>
+							<div class="col-md-5 text-center text-md-end">
+								<div class="footer-links">
+									<ul>
+										<li><a href="about.html">Terms & Condition</a></li>
+										<li><a href="about.html">Privacy & Policy</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<div class="scroll-top">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+				style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+			</path>
+		</svg>
+	</div>
+	<script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+	<script src="assets/js/app.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+
+			<div class="wrapper">
+				<div class="title-text">
+					<div class="title login">Login Form</div>
+					<div class="title signup">Signup Form</div>
+				</div>
+				<div class="form-container">
+					<div class="slide-controls">
+						<input type="radio" name="slide" id="login" checked>
+						<input type="radio" name="slide" id="signup">
+						<label for="login" class="slide login">Login</label>
+						<label for="signup" class="slide signup">Signup</label>
+						<div class="slider-tab"></div>
+					</div>
+					<div class="form-inner">
+						<form action="#" class="login">
+							<div class="field">
+								<input type="text" placeholder="Email Address" required>
+							</div>
+							<div class="field">
+								<input type="password" placeholder="Password" required>
+							</div>
+							<div class="pass-link"><a href="#">Forgot password?</a></div>
+							<div class="field btn">
+								<div class="btn-layer"></div>
+								<input type="submit" value="Login">
+							</div>
+							<div class="signup-link">Not a member? <a href="">Signup now</a></div>
+						</form>
+						<form action="#" class="signup">
+							<div class="field">
+								<input type="text" placeholder="Email Address" required>
+							</div>
+							<div class="field">
+								<input type="password" placeholder="Password" required>
+							</div>
+							<div class="field">
+								<input type="password" placeholder="Confirm password" required>
+							</div>
+							<div class="field btn">
+								<div class="btn-layer"></div>
+								<input type="submit" value="Signup">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+			<script>
+
+
+				document.addEventListener('contextmenu', function (event) {
+					event.stopPropagation();
+				}, true);
+
+
+				function getArrayFromLocalStorage(key) {
+					const storedArray = localStorage.getItem(key);
+					return storedArray ? JSON.parse(storedArray) : [];
+				}
+
+				$(document).ready(function () {
+					const currentArray = getArrayFromLocalStorage("cartItems");
+					$("#cartItemsSize").text(currentArray.length);
+
+					const storedUser = localStorage.getItem("user"); // Retrieve string from localStorage
+
+					if (storedUser) {
+						const parsedUser = JSON.parse(storedUser); // Parse the string back into an object
+
+						if (parsedUser.id > 0) {
+							$("#user_button").show();
+							$("#login_button").hide();
+							$("#user_name").text(parsedUser.name);
+							$("#user_address").text(parsedUser.address);
+							$("#user_phoneNumber").text(parsedUser.phoneNumber);
+							$("#user_email").text(parsedUser.email);
+						}
+					} else {
+						console.log("No user found in localStorage");
+						$("#user_button").hide();
+						$("#login_button").show();
+					}
+				});
+
+
+
+
+
+				//cart item display
+
+				document.addEventListener("DOMContentLoaded", function () {
+					// Get the cart items (mealId and quantity) from localStorage
+					let cartItems = JSON.parse(localStorage.getItem("cartItems") || "[]");
+
+					// Function to fetch product data from API
+					const fetchProductData = async (mealId) => {
+						try {
+							const response = await fetch(`/api/meals/getbyid/${mealId}`);
+							return await response.json();
+						} catch (error) {
+							console.error("Error fetching product data:", error);
+						}
+					};
+
+					const displayCart = async () => {
+						const cartItemsContainer = document.getElementById("cart-items");
+						let cartSubtotal = 0;
+
+						// Clear cart items container before inserting new items
+						cartItemsContainer.innerHTML = "";
+
+						// Loop through each item in cartItems
+						for (let cartItem of cartItems) {
+							const product = await fetchProductData(cartItem.mealId);
+
+							if (!product) continue;
+
+							// Use the quantity from cartItems
+							const productQuantity = cartItem.quantity || 1;
+							const productTotal = product.priceAfterDiscount * productQuantity;
+							cartSubtotal += productTotal;
+
+							// Dynamically create cart item
+							const cartItemHtml = `
+									                <li class="woocommerce-mini-cart-item mini_cart_item">
+									                    <a href="#" class="remove remove_cart_display" data-id="${product.id}">
+									                        <i class="far fa-times"></i>
+									                    </a>
+									                    <a href="#">
+									                        <img src="${product.strMealThumb}" alt="Cart Image" />${product.itemName}
+									                    </a>
+									                    <span class="quantity">
+									                        ${productQuantity} × <span class="woocommerce-Price-amount amount">
+									                            <span class="woocommerce-Price-currencySymbol">$</span>${product.priceAfterDiscount.toFixed(2)}
+									                        </span>
+									                    </span>
+									                </li>
+									            `;
+
+							// Append the new cart item to the cartItemsContainer
+							cartItemsContainer.insertAdjacentHTML("beforeend", cartItemHtml);
+						}
+
+						// Update subtotal
+						document.getElementById("cart-subtotal").textContent = cartSubtotal.toFixed(2);
+
+						$("#cartItemsSize").text(cartItems.length);
+
+						document.querySelectorAll(".remove_cart_display").forEach(button => {
+							button.addEventListener("click", removeCartItem);
+						});
+					};
+
+
+					// Function to update the cart dynamically
+					const updateCart = async () => {
+						const cartTableBody = document.querySelector("tbody");
+						let cartSubtotal = 0;
+
+						// Clear the table body before inserting new rows
+						cartTableBody.innerHTML = "";
+
+						for (let cartItem of cartItems) {
+							const product = await fetchProductData(cartItem.mealId);
+							if (!product) continue;
+
+							const productQuantity = cartItem.quantity || 1;
+							const productTotal = product.priceAfterDiscount * productQuantity;
+							cartSubtotal += productTotal;
+
+							// Dynamically create cart item row
+							const cartItemRow = `
+				                <tr class="cart_item" data-id="${product.id}">
+				                    <td data-title="Product">
+				                        <a class="cart-productimage">
+				                            <img width="91" height="91" src="${product.strMealThumb}" alt="${product.itemName}" />
+				                        </a>
+				                    </td>
+				                    <td data-title="Name">
+				                        <a class="cart-productname">${product.itemName}</a>
+				                    </td>
+				                    <td data-title="Price">
+				                        <span class="amount">
+				                            <bdi><span>$</span>${product.priceAfterDiscount.toFixed(2)}</bdi>
+				                        </span>
+				                    </td>
+				                    <td data-title="Quantity">
+				                        <div class="quantity">
+				                            <button type="button" class="quantity-minus qty-btn" data-id="${product.id}"><i class="far fa-minus"></i></button>
+				                            <input type="number" class="qty-input" data-id="${product.id}" value="${productQuantity}" min="1" max="99" />
+				                            <button type="button" class="quantity-plus qty-btn" data-id="${product.id}"><i class="far fa-plus"></i></button>
+				                        </div>
+				                    </td>
+				                    <td data-title="Total">
+				                        <span class="amount product-total">
+				                            <bdi><span>$</span>${productTotal.toFixed(2)}</bdi>
+				                        </span>
+				                    </td>
+				                    <td data-title="Remove">
+				                        <a href="#" class="remove" data-id="${product.id}"><i class="fal fa-trash-alt"></i></a>
+				                    </td>
+				                </tr>
+				            `;
+
+							cartTableBody.insertAdjacentHTML("beforeend", cartItemRow);
+						}
+
+						const actionsRow = `
+				            <tr>
+				                <td colspan="6" class="actions">
+				                    <div class="th-cart-coupon">
+				                        <input type="text" class="form-control" placeholder="Coupon Code..." />
+				                        <button type="submit" class="th-btn">Apply Coupon</button>
+				                    </div>
+				                    <a href="index.html" class="th-btn">Continue Shopping</a>
+				                </td>
+				            </tr>
+				        `;
+
+						cartTableBody.insertAdjacentHTML("beforeend", actionsRow);
+						updateCartTotals(cartSubtotal);
+						addEventListeners();
+					};
+
+					// Function to update cart totals
+					const updateCartTotals = (cartSubtotal) => {
+						document.querySelector("[data-title='Cart Subtotal'] .amount bdi").innerHTML = `<span>$</span>${cartSubtotal.toFixed(2)}`;
+						document.querySelector(".order-total .amount bdi").innerHTML = `<span>$</span>${cartSubtotal.toFixed(2)}`;
+					};
+
+					// Function to handle quantity changes via buttons
+					const handleQuantityChange = (event) => {
+						const button = event.target.closest(".qty-btn");
+						const productId = button.getAttribute("data-id");
+						const inputField = document.querySelector(`.qty-input[data-id="${productId}"]`);
+						let currentQuantity = parseInt(inputField.value);
+
+						// Check if it's the plus or minus button
+						if (button.classList.contains("quantity-plus")) {
+							currentQuantity += 1;
+						} else if (button.classList.contains("quantity-minus") && currentQuantity > 1) {
+							currentQuantity -= 1;
+						}
+
+						inputField.value = currentQuantity;
+						updateProductTotal(productId, currentQuantity);
+						updateLocalStorage(productId, currentQuantity); // Update localStorage
+					};
+
+					// Function to handle quantity changes via input field
+					const handleQuantityInput = (event) => {
+						const inputField = event.target;
+						const productId = inputField.getAttribute("data-id");
+						let currentQuantity = parseInt(inputField.value);
+
+						// Ensure quantity is at least 1
+						if (currentQuantity < 1) {
+							currentQuantity = 1;
+							inputField.value = currentQuantity;
+						}
+
+						updateProductTotal(productId, currentQuantity);
+						updateLocalStorage(productId, currentQuantity); // Update localStorage
+					};
+
+					// Function to update product total based on quantity
+					const updateProductTotal = (productId, newQuantity) => {
+						const productRow = document.querySelector(`tr[data-id="${productId}"]`);
+						const priceElement = productRow.querySelector("[data-title='Price'] .amount bdi");
+						const productPrice = parseFloat(priceElement.textContent.replace("$", ""));
+						const newTotal = productPrice * newQuantity;
+
+						productRow.querySelector(".product-total bdi").innerHTML = `<span>$</span>${newTotal.toFixed(2)}`;
+						recalculateCartSubtotal();
+					};
+
+					// Function to recalculate cart subtotal
+					const recalculateCartSubtotal = () => {
+						let newCartSubtotal = 0;
+						document.querySelectorAll(".cart_item").forEach(row => {
+							const productTotal = parseFloat(row.querySelector(".product-total bdi").textContent.replace("$", ""));
+							newCartSubtotal += productTotal;
+						});
+
+						updateCartTotals(newCartSubtotal);
+					};
+
+					// Function to update localStorage with new quantity
+					const updateLocalStorage = (mealId, quantity) => {
+						// Create a copy of cartItems to update the specific item
+						cartItems = cartItems.map(item => {
+							if (item.mealId === parseInt(mealId)) {
+								return {...item, quantity}; // Update quantity for the correct mealId
+							}
+							return item;
+						});
+
+						// Update localStorage with the modified cart items
+						localStorage.setItem("cartItems", JSON.stringify(cartItems));
+					};
+
+					// Function to remove cart item
+					const removeCartItem = (event) => {
+						event.preventDefault();
+						const productId = event.target.closest(".remove").getAttribute("data-id");
+
+						// Remove the item from the cartItems array
+						cartItems = cartItems.filter(item => item.mealId !== parseInt(productId));
+
+						// Update localStorage with the new cart items
+						localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+						// Remove the product row from the DOM
+						document.querySelector(`tr[data-id="${productId}"]`).remove();
+
+						// Recalculate the cart subtotal
+						recalculateCartSubtotal();
+
+						displayCart();
+					};
+
+					// Add event listeners for buttons and inputs
+					const addEventListeners = () => {
+						document.querySelectorAll(".qty-btn").forEach(button => {
+							button.addEventListener("click", handleQuantityChange);
+						});
+
+						document.querySelectorAll(".qty-input").forEach(input => {
+							input.addEventListener("input", handleQuantityInput);
+						});
+
+						document.querySelectorAll(".remove").forEach(button => {
+							button.addEventListener("click", removeCartItem);
+						});
+					};
+
+					updateCart();
+
+					displayCart();
+
+				});
+
+
+
+
+			</script>
+
+</html>
