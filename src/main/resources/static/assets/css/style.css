@@ -1159,7 +1159,6 @@ input[type="radio"] {
 }
 input[type="radio"] ~ label {
     position: relative;
-    padding-left: 30px;
     cursor: url("../img/theme-img/pointer.png"), auto;
     line-height: 1;
     display: inline-block;
@@ -14259,7 +14258,7 @@ span.select2-selection.select2-selection--single:focus {
     width: 70%;
   }
   .popup{
-    width: 70%;
+    width: 90%;
   }
 }
 
@@ -14269,7 +14268,7 @@ span.select2-selection.select2-selection--single:focus {
   overflow: hidden;
   max-width: auto;
   background: #f5f0f0;
-  padding: 30px;
+  padding: 15px;
   border-radius: 15px;
   box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
 }
@@ -14302,7 +14301,7 @@ span.select2-selection.select2-selection--single:focus {
   font-size: 18px;
   font-weight: 500;
   text-align: center;
-  line-height: 48px;
+  line-height: 55px;
   cursor: pointer;
   z-index: 1;
   transition: all 0.6s ease;

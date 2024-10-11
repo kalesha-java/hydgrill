@@ -381,8 +381,7 @@
 									<div class="menu-all-pages-container">
 										<ul class="menu">
 											<li><a href="about.html">About us</a></li>
-											<li><a href="#">Menus</a></li>
-											<li><a href="shop.html">Shop</a></li>
+											<li><a href="shop.html/soups">Shop</a></li>
 											<li><a href="contact.hml">Contact</a></li>
 										</ul>
 									</div>
@@ -393,11 +392,11 @@
 									<h3 class="widget_title">Food Menu</h3>
 									<div class="menu-all-pages-container">
 										<ul class="menu">
-											<li><a href="shop.html">DOSA AND IDLI </a></li>
-											<li><a href="shop.html">INDO-CHINESE -VEG</a></li>
-											<li><a href="shop.html">INDO-CHINESE-NON VEG</a></li>
-											<li><a href="shop.html">BIRYANI</a></li>
-											<li><a href="shop.html">PULAV</a></li>
+											<li><a href="shop.html/dosa-idli">DOSA AND IDLI </a></li>
+											<li><a href="shop.html/indo-chinese-veg">INDO-CHINESE VEG</a></li>
+											<li><a href="shop.html/indo-chinese-non-veg">INDO-CHINESE NON-VEG</a></li>
+											<li><a href="shop.html/biryani">BIRYANI</a></li>
+											<li><a href="shop.htmlpulav">PULAV</a></li>
 										</ul>
 									</div>
 								</div>
@@ -414,7 +413,7 @@
 													src="assets/img/icon/app_store_2.png" alt="icon" /></a>
 										</div>
 										<p class="mt-30 mb-3">24/7 Support Center</p>
-										<h3 class="box-title"><a href="tel:+19524357106">+(770) 800-1199</a></h3>
+										<h3 class="box-title"><a href="tel:+(770) 800-1199">+(770) 800-1199</a></h3>
 									</div>
 								</div>
 							</div>
@@ -449,157 +448,171 @@
 			</path>
 		</svg>
 	</div>
+
+
+	<div id="popup1" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+
+				<div class="wrapper">
+					<div class="title-text">
+						<div class="title login">Login</div>
+						<div class="title signup">Signup</div>
+					</div>
+					<div class="form-container">
+						<div class="slide-controls">
+							<input type="radio" name="slide" id="login" checked>
+							<input type="radio" name="slide" id="signup">
+							<label for="login" class="slide login">Login</label>
+							<label for="signup" class="slide signup">Signup</label>
+							<div class="slider-tab"></div>
+						</div>
+						<div class="form-inner">
+							<form action="#" class="login" id="loginForm">
+								<div class="field">
+									<input type="text" placeholder="Email Address" required>
+								</div>
+								<div class="field">
+									<input type="password" placeholder="Password" required>
+								</div>
+								<div class="pass-link"><a href="#">Forgot password?</a></div>
+								<div class="field btn" style="padding: 0rem;">
+									<div class="btn-layer"></div>
+									<input type="submit" value="Login" style="margin-left: 20px;">
+								</div>
+								<div class="signup-link">Not a member? <a href="">Signup now</a></div>
+							</form>
+							<form action="#" class="signup" id="signupForm">
+								<div class="field">
+									<input type="text" id="name" placeholder="Name" required>
+								</div>
+								<div class="field">
+									<input type="text" id="email" placeholder="Email Address" required>
+								</div>
+								<div class="field">
+									<input type="password" id="password" placeholder="Password" required>
+								</div>
+								<div class="field">
+									<input type="text" id="phoneNumber" placeholder="Phone Number" required>
+								</div>
+								<div class="field">
+									<input type="text" id="address" placeholder="Address" required>
+								</div>
+								<div class="field btn" style="padding: 0rem;">
+									<div class="btn-layer"></div>
+									<input type="submit" value="Signup" style="margin-left: 20px;">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+
 	<script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
 	<script src="assets/js/app.min.js"></script>
 	<script src="assets/js/main.js"></script>
 </body>
 
-<div id="popup1" class="overlay">
-	<div class="popup">
-		<a class="close" href="#">&times;</a>
-		<div class="content">
-
-			<div class="wrapper">
-				<div class="title-text">
-					<div class="title login">Login Form</div>
-					<div class="title signup">Signup Form</div>
-				</div>
-				<div class="form-container">
-					<div class="slide-controls">
-						<input type="radio" name="slide" id="login" checked>
-						<input type="radio" name="slide" id="signup">
-						<label for="login" class="slide login">Login</label>
-						<label for="signup" class="slide signup">Signup</label>
-						<div class="slider-tab"></div>
-					</div>
-					<div class="form-inner">
-						<form action="#" class="login">
-							<div class="field">
-								<input type="text" placeholder="Email Address" required>
-							</div>
-							<div class="field">
-								<input type="password" placeholder="Password" required>
-							</div>
-							<div class="pass-link"><a href="#">Forgot password?</a></div>
-							<div class="field btn">
-								<div class="btn-layer"></div>
-								<input type="submit" value="Login">
-							</div>
-							<div class="signup-link">Not a member? <a href="">Signup now</a></div>
-						</form>
-						<form action="#" class="signup">
-							<div class="field">
-								<input type="text" placeholder="Email Address" required>
-							</div>
-							<div class="field">
-								<input type="password" placeholder="Password" required>
-							</div>
-							<div class="field">
-								<input type="password" placeholder="Confirm password" required>
-							</div>
-							<div class="field btn">
-								<div class="btn-layer"></div>
-								<input type="submit" value="Signup">
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
 
 
-			<script>
+<script>
 
 
-				document.addEventListener('contextmenu', function (event) {
-					event.stopPropagation();
-				}, true);
+	document.addEventListener('contextmenu', function (event) {
+		event.stopPropagation();
+	}, true);
+
+	function getArrayFromLocalStorage(key) {
+		const storedArray = localStorage.getItem(key);
+		return storedArray ? JSON.parse(storedArray) : [];
+	}
+
+	$(document).ready(function () {
+
+		const storedUser = localStorage.getItem("user"); // Retrieve string from localStorage
+
+		if (storedUser) {
+			const parsedUser = JSON.parse(storedUser); // Parse the string back into an object
+
+			if (parsedUser.id > 0) {
+				$("#user_button").show();
+				$("#login_button").hide();
+				$("#user_name").text(parsedUser.name);
+				$("#user_address").text(parsedUser.address);
+				$("#user_phoneNumber").text(parsedUser.phoneNumber);
+				$("#user_email").text(parsedUser.email);
+			}
+		} else {
+			console.log("No user found in localStorage");
+			$("#user_button").hide();
+			$("#login_button").show();
+		}
+	});
+
+	//cart item display
 
 
-				function getArrayFromLocalStorage(key) {
-					const storedArray = localStorage.getItem(key);
-					return storedArray ? JSON.parse(storedArray) : [];
-				}
-
-				$(document).ready(function () {
-
-					const storedUser = localStorage.getItem("user"); // Retrieve string from localStorage
-
-					if (storedUser) {
-						const parsedUser = JSON.parse(storedUser); // Parse the string back into an object
-
-						if (parsedUser.id > 0) {
-							$("#user_button").show();
-							$("#login_button").hide();
-							$("#user_name").text(parsedUser.name);
-							$("#user_address").text(parsedUser.address);
-							$("#user_phoneNumber").text(parsedUser.phoneNumber);
-							$("#user_email").text(parsedUser.email);
-						}
-					} else {
-						console.log("No user found in localStorage");
-						$("#user_button").hide();
-						$("#login_button").show();
-					}
-				});
-
-				//cart item display
+	const loginText = document.querySelector(".title-text .login");
+	const loginForm = document.querySelector("form.login");
+	const loginBtn = document.querySelector("label.login");
+	const signupBtn = document.querySelector("label.signup");
+	const signupLink = document.querySelector("form .signup-link a");
+	signupBtn.onclick = (() => {
+		loginForm.style.marginLeft = "-50%";
+		loginText.style.marginLeft = "-50%";
+	});
+	loginBtn.onclick = (() => {
+		loginForm.style.marginLeft = "0%";
+		loginText.style.marginLeft = "0%";
+	});
+	signupLink.onclick = (() => {
+		signupBtn.click();
+		return false;
+	});
 
 
-				const loginText = document.querySelector(".title-text .login");
-				const loginForm = document.querySelector("form.login");
-				const loginBtn = document.querySelector("label.login");
-				const signupBtn = document.querySelector("label.signup");
-				const signupLink = document.querySelector("form .signup-link a");
-				signupBtn.onclick = (() => {
-					loginForm.style.marginLeft = "-50%";
-					loginText.style.marginLeft = "-50%";
-				});
-				loginBtn.onclick = (() => {
-					loginForm.style.marginLeft = "0%";
-					loginText.style.marginLeft = "0%";
-				});
-				signupLink.onclick = (() => {
-					signupBtn.click();
-					return false;
-				});
+	//checkout code
 
+	document.addEventListener("DOMContentLoaded", function () {
+		// Get the cart items (including product IDs and quantities) from localStorage
+		let cartItems = JSON.parse(localStorage.getItem("cartItems") || "[]");
 
-				//checkout code
+		// Function to fetch product data from API by productId
+		const fetchProductData = async (productId) => {
+			try {
+				const response = await fetch(`/api/meals/getbyid/${productId}`);
+				return await response.json();
+			} catch (error) {
+				console.error("Error fetching product data:", error);
+			}
+		};
 
-				document.addEventListener("DOMContentLoaded", function () {
-					// Get the cart items (including product IDs and quantities) from localStorage
-					let cartItems = JSON.parse(localStorage.getItem("cartItems") || "[]");
+		const updateCart = async () => {
+			const cartItemsContainer = document.getElementById("cart-items");
+			let cartSubtotal = 0;
 
-					// Function to fetch product data from API by productId
-					const fetchProductData = async (productId) => {
-						try {
-							const response = await fetch(`/api/meals/getbyid/${productId}`);
-							return await response.json();
-						} catch (error) {
-							console.error("Error fetching product data:", error);
-						}
-					};
+			// Clear cart items container before inserting new items
+			cartItemsContainer.innerHTML = "";
 
-					const updateCart = async () => {
-						const cartItemsContainer = document.getElementById("cart-items");
-						let cartSubtotal = 0;
+			// Loop through each item in cartItems
+			for (let cartItem of cartItems) {
+				const product = await fetchProductData(cartItem.mealId);
 
-						// Clear cart items container before inserting new items
-						cartItemsContainer.innerHTML = "";
+				if (!product) continue;
 
-						// Loop through each item in cartItems
-						for (let cartItem of cartItems) {
-							const product = await fetchProductData(cartItem.mealId);
+				// Use the quantity from cartItems
+				const productQuantity = cartItem.quantity || 1;
+				const productTotal = product.priceAfterDiscount * productQuantity;
+				cartSubtotal += productTotal;
 
-							if (!product) continue;
-
-							// Use the quantity from cartItems
-							const productQuantity = cartItem.quantity || 1;
-							const productTotal = product.priceAfterDiscount * productQuantity;
-							cartSubtotal += productTotal;
-
-							// Dynamically create cart item
-							const cartItemHtml = `
+				// Dynamically create cart item
+				const cartItemHtml = `
 													                <li class="woocommerce-mini-cart-item mini_cart_item">
 													                    <a class="remove remove_from_cart_button" data-id="${product.id}">
 													                        <i class="far fa-times"></i>
@@ -615,43 +628,43 @@
 													                </li>
 													            `;
 
-							// Append the new cart item to the cartItemsContainer
-							cartItemsContainer.insertAdjacentHTML("beforeend", cartItemHtml);
-						}
-						$("#cartItemsSize").text(cartItems.length);
-						// Update subtotal
-						document.getElementById("cart-subtotal").textContent = cartSubtotal.toFixed(2);
+				// Append the new cart item to the cartItemsContainer
+				cartItemsContainer.insertAdjacentHTML("beforeend", cartItemHtml);
+			}
+			$("#cartItemsSize").text(cartItems.length);
+			// Update subtotal
+			document.getElementById("cart-subtotal").textContent = cartSubtotal.toFixed(2);
 
-						document.querySelectorAll('.remove_from_cart_button').forEach(button => {
-							button.addEventListener('click', function (e) {
-								e.preventDefault();
-								const mealId = this.getAttribute('data-id');
-								removeFromCart(mealId);
-							});
-						});
-					};
+			document.querySelectorAll('.remove_from_cart_button').forEach(button => {
+				button.addEventListener('click', function (e) {
+					e.preventDefault();
+					const mealId = this.getAttribute('data-id');
+					removeFromCart(mealId);
+				});
+			});
+		};
 
 
-					// Function to update the cart dynamically
-					const displayCart = async () => {
-						const cartItemsContainer = document.querySelector("tbody");
-						let cartSubtotal = 0;
+		// Function to update the cart dynamically
+		const displayCart = async () => {
+			const cartItemsContainer = document.querySelector("tbody");
+			let cartSubtotal = 0;
 
-						// Clear cart content before adding items to avoid duplicates
-						cartItemsContainer.innerHTML = '';
+			// Clear cart content before adding items to avoid duplicates
+			cartItemsContainer.innerHTML = '';
 
-						// Loop through each item in the cart (contains mealId and quantity)
-						for (let cartItem of cartItems) {
-							const {mealId, quantity} = cartItem; // Destructure mealId and quantity
-							const product = await fetchProductData(mealId);
+			// Loop through each item in the cart (contains mealId and quantity)
+			for (let cartItem of cartItems) {
+				const {mealId, quantity} = cartItem; // Destructure mealId and quantity
+				const product = await fetchProductData(mealId);
 
-							if (!product) continue;
+				if (!product) continue;
 
-							const productTotal = product.priceAfterDiscount * quantity; // Calculate total for this product
-							cartSubtotal += productTotal; // Add to subtotal
+				const productTotal = product.priceAfterDiscount * quantity; // Calculate total for this product
+				cartSubtotal += productTotal; // Add to subtotal
 
-							// Dynamically create cart item row
-							const cartItemHTML = `
+				// Dynamically create cart item row
+				const cartItemHTML = `
 				                <tr class="cart_item">
 				                    <td data-title="Product">
 				                        <a class="cart-productimage"><img width="91" height="91" src="${product.strMealThumb}" alt="Image" /></a>
@@ -676,75 +689,107 @@
 				                </tr>
 				            `;
 
-							// Append the new cart item row to the table
-							cartItemsContainer.insertAdjacentHTML("beforeend", cartItemHTML);
-						}
+				// Append the new cart item row to the table
+				cartItemsContainer.insertAdjacentHTML("beforeend", cartItemHTML);
+			}
 
-						document.getElementById("cart-total").textContent = cartSubtotal.toFixed(2);
+			document.getElementById("cart-total").textContent = cartSubtotal.toFixed(2);
 
-						// Add event listeners for removing items
-						document.querySelectorAll('.remove-from-cart').forEach(button => {
-							button.addEventListener('click', function (e) {
-								e.preventDefault();
-								const mealId = this.getAttribute('data-id');
-								removeFromCart(mealId);
-							});
-						});
-					};
-
-					// Function to remove item from cart
-					const removeFromCart = (mealId) => {
-						// Update the cartItems array to remove the item with the given mealId
-						cartItems = cartItems.filter(item => item.mealId !== parseInt(mealId));
-
-						// Update localStorage with the modified cartItems array
-						localStorage.setItem("cartItems", JSON.stringify(cartItems));
-
-						// Re-render the cart to reflect the updated cartItems
-						displayCart();
-
-						updateCart();
-					};
-
-					// Initialize the cart update
-					displayCart();
-
-					updateCart();
+			// Add event listeners for removing items
+			document.querySelectorAll('.remove-from-cart').forEach(button => {
+				button.addEventListener('click', function (e) {
+					e.preventDefault();
+					const mealId = this.getAttribute('data-id');
+					removeFromCart(mealId);
 				});
+			});
+		};
+
+		// Function to remove item from cart
+		const removeFromCart = (mealId) => {
+			// Update the cartItems array to remove the item with the given mealId
+			cartItems = cartItems.filter(item => item.mealId !== parseInt(mealId));
+
+			// Update localStorage with the modified cartItems array
+			localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+			// Re-render the cart to reflect the updated cartItems
+			displayCart();
+
+			updateCart();
+		};
+
+		// Initialize the cart update
+		displayCart();
+
+		updateCart();
+	});
 
 
-				function placeOrder() {
-					let cartItems = localStorage.getItem("cartItems");
-					let userId = JSON.parse(localStorage.getItem("user")).id;
-					let price = $("#cart-total").text();  // Assuming this value is a number
+	function placeOrder() {
+		let userId = 0;
+		if(localStorage.getItem("user") == null)
+		{
+			userId = getUniqueDeviceId();
+		}
+		else{
+			userId = JSON.parse(localStorage.getItem("user")).id;
+		}
+		let cartItems = localStorage.getItem("cartItems");
+		let price = $("#cart-total").text();  // Assuming this value is a number
 
-					// Make the AJAX POST request
-					$.ajax({
-						url: `/api/orders/create/${userId}`,  // Endpoint with userId in the URL
-						type: 'POST',
-						data: {
-							orderItems: cartItems,  // Pass cart items (as a string)
-							price: price            // Pass price (as a string, ensure it's converted to number on server if needed)
-						},
-						success: function (response) {
-							// Handle success response
-							alert("Order created successfully");
-							localStorage.setItem("cartItems", JSON.stringify([]));
+		// Make the AJAX POST request
+		$.ajax({
+			url: `/api/orders/create/${userId}`,  // Endpoint with userId in the URL
+			type: 'POST',
+			data: {
+				orderItems: cartItems,  // Pass cart items (as a string)
+				price: price            // Pass price (as a string, ensure it's converted to number on server if needed)
+			},
+			success: function (response) {
+				// Handle success response
+				alert("Order created successfully");
+				localStorage.setItem("cartItems", JSON.stringify([]));
 
-							window.location.href="orders.html";
-						},
-						error: function (error) {
-							// Handle error response
-							alert("Error creating order:", error);
-							// You can show an error message to the user
-						}
-					});
-
-
-				}
+				window.location.href = "orders.html";
+			},
+			error: function (error) {
+				// Handle error response
+				alert("Error creating order:", error);
+				// You can show an error message to the user
+			}
+		});
 
 
+	}
 
-			</script>
+
+	function getUniqueDeviceId() {
+	    // Collecting device/browser-specific data
+	    const userAgent = navigator.userAgent; // User agent string (browser info)
+	    const screenWidth = screen.width;      // Screen width
+	    const screenHeight = screen.height;    // Screen height
+	    const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone; // Timezone
+	    const plugins = Array.from(navigator.plugins).map(p => p.name).join(','); // Plugins installed
+	
+	    // Combine all the above data into a single string
+	    const data = `${userAgent}-${screenWidth}x${screenHeight}-${timezone}-${plugins}`;
+	
+	    // Create a simple hash function (MD5/SHA-1 would be ideal here, but for simplicity, using a basic hash)
+	    let hash = 0;
+	    for (let i = 0; i < data.length; i++) {
+	        const char = data.charCodeAt(i);
+	        hash = ((hash << 5) - hash) + char;
+	        hash |= 0; // Convert to 32bit integer
+	    }
+	
+	    // Convert the hash to a positive number and return it as the unique ID
+	    return Math.abs(hash).toString();
+	}
+	
+	console.log("Unique Device ID:", getUniqueDeviceId());
+
+
+</script>
 
 </html>

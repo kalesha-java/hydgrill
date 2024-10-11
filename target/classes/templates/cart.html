@@ -346,8 +346,7 @@
 									<div class="menu-all-pages-container">
 										<ul class="menu">
 											<li><a href="about.html">About us</a></li>
-											<li><a href="#">Menus</a></li>
-											<li><a href="shop.html">Shop</a></li>
+											<li><a href="shop.html/soups">Shop</a></li>
 											<li><a href="contact.hml">Contact</a></li>
 										</ul>
 									</div>
@@ -358,11 +357,11 @@
 									<h3 class="widget_title">Food Menu</h3>
 									<div class="menu-all-pages-container">
 										<ul class="menu">
-											<li><a href="shop.html">DOSA AND IDLI </a></li>
-											<li><a href="shop.html">INDO-CHINESE -VEG</a></li>
-											<li><a href="shop.html">INDO-CHINESE-NON VEG</a></li>
-											<li><a href="shop.html">BIRYANI</a></li>
-											<li><a href="shop.html">PULAV</a></li>
+											<li><a href="shop.html/dosa-idli">DOSA AND IDLI </a></li>
+											<li><a href="shop.html/indo-chinese-veg">INDO-CHINESE VEG</a></li>
+											<li><a href="shop.html/indo-chinese-non-veg">INDO-CHINESE NON-VEG</a></li>
+											<li><a href="shop.html/biryani">BIRYANI</a></li>
+											<li><a href="shop.htmlpulav">PULAV</a></li>
 										</ul>
 									</div>
 								</div>
@@ -379,7 +378,7 @@
 													src="assets/img/icon/app_store_2.png" alt="icon" /></a>
 										</div>
 										<p class="mt-30 mb-3">24/7 Support Center</p>
-										<h3 class="box-title"><a href="tel:+19524357106">+(770) 800-1199</a></h3>
+										<h3 class="box-title"><a href="tel:+(770) 800-1199">+(770) 800-1199</a></h3>
 									</div>
 								</div>
 							</div>
@@ -414,141 +413,175 @@
 			</path>
 		</svg>
 	</div>
+
+	<div id="popup1" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+
+				<div class="wrapper">
+					<div class="title-text">
+						<div class="title login">Login</div>
+						<div class="title signup">Signup</div>
+					</div>
+					<div class="form-container">
+						<div class="slide-controls">
+							<input type="radio" name="slide" id="login" checked>
+							<input type="radio" name="slide" id="signup">
+							<label for="login" class="slide login">Login</label>
+							<label for="signup" class="slide signup">Signup</label>
+							<div class="slider-tab"></div>
+						</div>
+						<div class="form-inner">
+							<form action="#" class="login" id="loginForm">
+								<div class="field">
+									<input type="text" placeholder="Email Address" required>
+								</div>
+								<div class="field">
+									<input type="password" placeholder="Password" required>
+								</div>
+								<div class="pass-link"><a href="#">Forgot password?</a></div>
+								<div class="field btn" style="padding: 0rem;">
+									<div class="btn-layer"></div>
+									<input type="submit" value="Login" style="margin-left: 20px;">
+								</div>
+								<div class="signup-link">Not a member? <a href="">Signup now</a></div>
+							</form>
+							<form action="#" class="signup" id="signupForm">
+								<div class="field">
+									<input type="text" id="name" placeholder="Name" required>
+								</div>
+								<div class="field">
+									<input type="text" id="email" placeholder="Email Address" required>
+								</div>
+								<div class="field">
+									<input type="password" id="password" placeholder="Password" required>
+								</div>
+								<div class="field">
+									<input type="text" id="phoneNumber" placeholder="Phone Number" required>
+								</div>
+								<div class="field">
+									<input type="text" id="address" placeholder="Address" required>
+								</div>
+								<div class="field btn" style="padding: 0rem;">
+									<div class="btn-layer"></div>
+									<input type="submit" value="Signup" style="margin-left: 20px;">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+
 	<script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
 	<script src="assets/js/app.min.js"></script>
 	<script src="assets/js/main.js"></script>
 </body>
 
-<div id="popup1" class="overlay">
-	<div class="popup">
-		<a class="close" href="#">&times;</a>
-		<div class="content">
-
-			<div class="wrapper">
-				<div class="title-text">
-					<div class="title login">Login Form</div>
-					<div class="title signup">Signup Form</div>
-				</div>
-				<div class="form-container">
-					<div class="slide-controls">
-						<input type="radio" name="slide" id="login" checked>
-						<input type="radio" name="slide" id="signup">
-						<label for="login" class="slide login">Login</label>
-						<label for="signup" class="slide signup">Signup</label>
-						<div class="slider-tab"></div>
-					</div>
-					<div class="form-inner">
-						<form action="#" class="login">
-							<div class="field">
-								<input type="text" placeholder="Email Address" required>
-							</div>
-							<div class="field">
-								<input type="password" placeholder="Password" required>
-							</div>
-							<div class="pass-link"><a href="#">Forgot password?</a></div>
-							<div class="field btn">
-								<div class="btn-layer"></div>
-								<input type="submit" value="Login">
-							</div>
-							<div class="signup-link">Not a member? <a href="">Signup now</a></div>
-						</form>
-						<form action="#" class="signup">
-							<div class="field">
-								<input type="text" placeholder="Email Address" required>
-							</div>
-							<div class="field">
-								<input type="password" placeholder="Password" required>
-							</div>
-							<div class="field">
-								<input type="password" placeholder="Confirm password" required>
-							</div>
-							<div class="field btn">
-								<div class="btn-layer"></div>
-								<input type="submit" value="Signup">
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
 
 
-			<script>
+
+<script>
 
 
-				document.addEventListener('contextmenu', function (event) {
-					event.stopPropagation();
-				}, true);
+	document.addEventListener('contextmenu', function (event) {
+		event.stopPropagation();
+	}, true);
 
 
-				function getArrayFromLocalStorage(key) {
-					const storedArray = localStorage.getItem(key);
-					return storedArray ? JSON.parse(storedArray) : [];
-				}
+	const loginText = document.querySelector(".title-text .login");
+	const loginForm = document.querySelector("form.login");
+	const loginBtn = document.querySelector("label.login");
+	const signupBtn = document.querySelector("label.signup");
+	const signupLink = document.querySelector("form .signup-link a");
+	signupBtn.onclick = (() => {
+		loginForm.style.marginLeft = "-50%";
+		loginText.style.marginLeft = "-50%";
+	});
+	loginBtn.onclick = (() => {
+		loginForm.style.marginLeft = "0%";
+		loginText.style.marginLeft = "0%";
+	});
+	signupLink.onclick = (() => {
+		signupBtn.click();
+		return false;
+	});
 
-				$(document).ready(function () {
-					const currentArray = getArrayFromLocalStorage("cartItems");
-					$("#cartItemsSize").text(currentArray.length);
 
-					const storedUser = localStorage.getItem("user"); // Retrieve string from localStorage
+	function getArrayFromLocalStorage(key) {
+		const storedArray = localStorage.getItem(key);
+		return storedArray ? JSON.parse(storedArray) : [];
+	}
 
-					if (storedUser) {
-						const parsedUser = JSON.parse(storedUser); // Parse the string back into an object
+	$(document).ready(function () {
+		const currentArray = getArrayFromLocalStorage("cartItems");
+		$("#cartItemsSize").text(currentArray.length);
 
-						if (parsedUser.id > 0) {
-							$("#user_button").show();
-							$("#login_button").hide();
-							$("#user_name").text(parsedUser.name);
-							$("#user_address").text(parsedUser.address);
-							$("#user_phoneNumber").text(parsedUser.phoneNumber);
-							$("#user_email").text(parsedUser.email);
-						}
-					} else {
-						console.log("No user found in localStorage");
-						$("#user_button").hide();
-						$("#login_button").show();
-					}
-				});
+		const storedUser = localStorage.getItem("user"); // Retrieve string from localStorage
+
+		if (storedUser) {
+			const parsedUser = JSON.parse(storedUser); // Parse the string back into an object
+
+			if (parsedUser.id > 0) {
+				$("#user_button").show();
+				$("#login_button").hide();
+				$("#user_name").text(parsedUser.name);
+				$("#user_address").text(parsedUser.address);
+				$("#user_phoneNumber").text(parsedUser.phoneNumber);
+				$("#user_email").text(parsedUser.email);
+			}
+		} else {
+			console.log("No user found in localStorage");
+			$("#user_button").hide();
+			$("#login_button").show();
+		}
+	});
 
 
 
 
 
-				//cart item display
+	//cart item display
 
-				document.addEventListener("DOMContentLoaded", function () {
-					// Get the cart items (mealId and quantity) from localStorage
-					let cartItems = JSON.parse(localStorage.getItem("cartItems") || "[]");
+	document.addEventListener("DOMContentLoaded", function () {
+		// Get the cart items (mealId and quantity) from localStorage
+		let cartItems = JSON.parse(localStorage.getItem("cartItems") || "[]");
 
-					// Function to fetch product data from API
-					const fetchProductData = async (mealId) => {
-						try {
-							const response = await fetch(`/api/meals/getbyid/${mealId}`);
-							return await response.json();
-						} catch (error) {
-							console.error("Error fetching product data:", error);
-						}
-					};
+		// Function to fetch product data from API
+		const fetchProductData = async (mealId) => {
+			try {
+				const response = await fetch(`/api/meals/getbyid/${mealId}`);
+				return await response.json();
+			} catch (error) {
+				console.error("Error fetching product data:", error);
+			}
+		};
 
-					const displayCart = async () => {
-						const cartItemsContainer = document.getElementById("cart-items");
-						let cartSubtotal = 0;
+		const displayCart = async () => {
+			const cartItemsContainer = document.getElementById("cart-items");
+			let cartSubtotal = 0;
 
-						// Clear cart items container before inserting new items
-						cartItemsContainer.innerHTML = "";
+			// Clear cart items container before inserting new items
+			cartItemsContainer.innerHTML = "";
 
-						// Loop through each item in cartItems
-						for (let cartItem of cartItems) {
-							const product = await fetchProductData(cartItem.mealId);
+			// Loop through each item in cartItems
+			for (let cartItem of cartItems) {
+				const product = await fetchProductData(cartItem.mealId);
 
-							if (!product) continue;
+				if (!product) continue;
 
-							// Use the quantity from cartItems
-							const productQuantity = cartItem.quantity || 1;
-							const productTotal = product.priceAfterDiscount * productQuantity;
-							cartSubtotal += productTotal;
+				// Use the quantity from cartItems
+				const productQuantity = cartItem.quantity || 1;
+				const productTotal = product.priceAfterDiscount * productQuantity;
+				cartSubtotal += productTotal;
 
-							// Dynamically create cart item
-							const cartItemHtml = `
+				// Dynamically create cart item
+				const cartItemHtml = `
 									                <li class="woocommerce-mini-cart-item mini_cart_item">
 									                    <a href="#" class="remove remove_cart_display" data-id="${product.id}">
 									                        <i class="far fa-times"></i>
@@ -564,39 +597,39 @@
 									                </li>
 									            `;
 
-							// Append the new cart item to the cartItemsContainer
-							cartItemsContainer.insertAdjacentHTML("beforeend", cartItemHtml);
-						}
+				// Append the new cart item to the cartItemsContainer
+				cartItemsContainer.insertAdjacentHTML("beforeend", cartItemHtml);
+			}
 
-						// Update subtotal
-						document.getElementById("cart-subtotal").textContent = cartSubtotal.toFixed(2);
+			// Update subtotal
+			document.getElementById("cart-subtotal").textContent = cartSubtotal.toFixed(2);
 
-						$("#cartItemsSize").text(cartItems.length);
+			$("#cartItemsSize").text(cartItems.length);
 
-						document.querySelectorAll(".remove_cart_display").forEach(button => {
-							button.addEventListener("click", removeCartItem);
-						});
-					};
+			document.querySelectorAll(".remove_cart_display").forEach(button => {
+				button.addEventListener("click", removeCartItem);
+			});
+		};
 
 
-					// Function to update the cart dynamically
-					const updateCart = async () => {
-						const cartTableBody = document.querySelector("tbody");
-						let cartSubtotal = 0;
+		// Function to update the cart dynamically
+		const updateCart = async () => {
+			const cartTableBody = document.querySelector("tbody");
+			let cartSubtotal = 0;
 
-						// Clear the table body before inserting new rows
-						cartTableBody.innerHTML = "";
+			// Clear the table body before inserting new rows
+			cartTableBody.innerHTML = "";
 
-						for (let cartItem of cartItems) {
-							const product = await fetchProductData(cartItem.mealId);
-							if (!product) continue;
+			for (let cartItem of cartItems) {
+				const product = await fetchProductData(cartItem.mealId);
+				if (!product) continue;
 
-							const productQuantity = cartItem.quantity || 1;
-							const productTotal = product.priceAfterDiscount * productQuantity;
-							cartSubtotal += productTotal;
+				const productQuantity = cartItem.quantity || 1;
+				const productTotal = product.priceAfterDiscount * productQuantity;
+				cartSubtotal += productTotal;
 
-							// Dynamically create cart item row
-							const cartItemRow = `
+				// Dynamically create cart item row
+				const cartItemRow = `
 				                <tr class="cart_item" data-id="${product.id}">
 				                    <td data-title="Product">
 				                        <a class="cart-productimage">
@@ -629,10 +662,10 @@
 				                </tr>
 				            `;
 
-							cartTableBody.insertAdjacentHTML("beforeend", cartItemRow);
-						}
+				cartTableBody.insertAdjacentHTML("beforeend", cartItemRow);
+			}
 
-						const actionsRow = `
+			const actionsRow = `
 				            <tr>
 				                <td colspan="6" class="actions">
 				                    <div class="th-cart-coupon">
@@ -644,132 +677,132 @@
 				            </tr>
 				        `;
 
-						cartTableBody.insertAdjacentHTML("beforeend", actionsRow);
-						updateCartTotals(cartSubtotal);
-						addEventListeners();
-					};
+			cartTableBody.insertAdjacentHTML("beforeend", actionsRow);
+			updateCartTotals(cartSubtotal);
+			addEventListeners();
+		};
 
-					// Function to update cart totals
-					const updateCartTotals = (cartSubtotal) => {
-						document.querySelector("[data-title='Cart Subtotal'] .amount bdi").innerHTML = `<span>$</span>${cartSubtotal.toFixed(2)}`;
-						document.querySelector(".order-total .amount bdi").innerHTML = `<span>$</span>${cartSubtotal.toFixed(2)}`;
-					};
+		// Function to update cart totals
+		const updateCartTotals = (cartSubtotal) => {
+			document.querySelector("[data-title='Cart Subtotal'] .amount bdi").innerHTML = `<span>$</span>${cartSubtotal.toFixed(2)}`;
+			document.querySelector(".order-total .amount bdi").innerHTML = `<span>$</span>${cartSubtotal.toFixed(2)}`;
+		};
 
-					// Function to handle quantity changes via buttons
-					const handleQuantityChange = (event) => {
-						const button = event.target.closest(".qty-btn");
-						const productId = button.getAttribute("data-id");
-						const inputField = document.querySelector(`.qty-input[data-id="${productId}"]`);
-						let currentQuantity = parseInt(inputField.value);
+		// Function to handle quantity changes via buttons
+		const handleQuantityChange = (event) => {
+			const button = event.target.closest(".qty-btn");
+			const productId = button.getAttribute("data-id");
+			const inputField = document.querySelector(`.qty-input[data-id="${productId}"]`);
+			let currentQuantity = parseInt(inputField.value);
 
-						// Check if it's the plus or minus button
-						if (button.classList.contains("quantity-plus")) {
-							currentQuantity += 1;
-						} else if (button.classList.contains("quantity-minus") && currentQuantity > 1) {
-							currentQuantity -= 1;
-						}
+			// Check if it's the plus or minus button
+			if (button.classList.contains("quantity-plus")) {
+				currentQuantity += 1;
+			} else if (button.classList.contains("quantity-minus") && currentQuantity > 1) {
+				currentQuantity -= 1;
+			}
 
-						inputField.value = currentQuantity;
-						updateProductTotal(productId, currentQuantity);
-						updateLocalStorage(productId, currentQuantity); // Update localStorage
-					};
+			inputField.value = currentQuantity;
+			updateProductTotal(productId, currentQuantity);
+			updateLocalStorage(productId, currentQuantity); // Update localStorage
+		};
 
-					// Function to handle quantity changes via input field
-					const handleQuantityInput = (event) => {
-						const inputField = event.target;
-						const productId = inputField.getAttribute("data-id");
-						let currentQuantity = parseInt(inputField.value);
+		// Function to handle quantity changes via input field
+		const handleQuantityInput = (event) => {
+			const inputField = event.target;
+			const productId = inputField.getAttribute("data-id");
+			let currentQuantity = parseInt(inputField.value);
 
-						// Ensure quantity is at least 1
-						if (currentQuantity < 1) {
-							currentQuantity = 1;
-							inputField.value = currentQuantity;
-						}
+			// Ensure quantity is at least 1
+			if (currentQuantity < 1) {
+				currentQuantity = 1;
+				inputField.value = currentQuantity;
+			}
 
-						updateProductTotal(productId, currentQuantity);
-						updateLocalStorage(productId, currentQuantity); // Update localStorage
-					};
+			updateProductTotal(productId, currentQuantity);
+			updateLocalStorage(productId, currentQuantity); // Update localStorage
+		};
 
-					// Function to update product total based on quantity
-					const updateProductTotal = (productId, newQuantity) => {
-						const productRow = document.querySelector(`tr[data-id="${productId}"]`);
-						const priceElement = productRow.querySelector("[data-title='Price'] .amount bdi");
-						const productPrice = parseFloat(priceElement.textContent.replace("$", ""));
-						const newTotal = productPrice * newQuantity;
+		// Function to update product total based on quantity
+		const updateProductTotal = (productId, newQuantity) => {
+			const productRow = document.querySelector(`tr[data-id="${productId}"]`);
+			const priceElement = productRow.querySelector("[data-title='Price'] .amount bdi");
+			const productPrice = parseFloat(priceElement.textContent.replace("$", ""));
+			const newTotal = productPrice * newQuantity;
 
-						productRow.querySelector(".product-total bdi").innerHTML = `<span>$</span>${newTotal.toFixed(2)}`;
-						recalculateCartSubtotal();
-					};
+			productRow.querySelector(".product-total bdi").innerHTML = `<span>$</span>${newTotal.toFixed(2)}`;
+			recalculateCartSubtotal();
+		};
 
-					// Function to recalculate cart subtotal
-					const recalculateCartSubtotal = () => {
-						let newCartSubtotal = 0;
-						document.querySelectorAll(".cart_item").forEach(row => {
-							const productTotal = parseFloat(row.querySelector(".product-total bdi").textContent.replace("$", ""));
-							newCartSubtotal += productTotal;
-						});
+		// Function to recalculate cart subtotal
+		const recalculateCartSubtotal = () => {
+			let newCartSubtotal = 0;
+			document.querySelectorAll(".cart_item").forEach(row => {
+				const productTotal = parseFloat(row.querySelector(".product-total bdi").textContent.replace("$", ""));
+				newCartSubtotal += productTotal;
+			});
 
-						updateCartTotals(newCartSubtotal);
-					};
+			updateCartTotals(newCartSubtotal);
+		};
 
-					// Function to update localStorage with new quantity
-					const updateLocalStorage = (mealId, quantity) => {
-						// Create a copy of cartItems to update the specific item
-						cartItems = cartItems.map(item => {
-							if (item.mealId === parseInt(mealId)) {
-								return {...item, quantity}; // Update quantity for the correct mealId
-							}
-							return item;
-						});
+		// Function to update localStorage with new quantity
+		const updateLocalStorage = (mealId, quantity) => {
+			// Create a copy of cartItems to update the specific item
+			cartItems = cartItems.map(item => {
+				if (item.mealId === parseInt(mealId)) {
+					return {...item, quantity}; // Update quantity for the correct mealId
+				}
+				return item;
+			});
 
-						// Update localStorage with the modified cart items
-						localStorage.setItem("cartItems", JSON.stringify(cartItems));
-					};
+			// Update localStorage with the modified cart items
+			localStorage.setItem("cartItems", JSON.stringify(cartItems));
+		};
 
-					// Function to remove cart item
-					const removeCartItem = (event) => {
-						event.preventDefault();
-						const productId = event.target.closest(".remove").getAttribute("data-id");
+		// Function to remove cart item
+		const removeCartItem = (event) => {
+			event.preventDefault();
+			const productId = event.target.closest(".remove").getAttribute("data-id");
 
-						// Remove the item from the cartItems array
-						cartItems = cartItems.filter(item => item.mealId !== parseInt(productId));
+			// Remove the item from the cartItems array
+			cartItems = cartItems.filter(item => item.mealId !== parseInt(productId));
 
-						// Update localStorage with the new cart items
-						localStorage.setItem("cartItems", JSON.stringify(cartItems));
+			// Update localStorage with the new cart items
+			localStorage.setItem("cartItems", JSON.stringify(cartItems));
 
-						// Remove the product row from the DOM
-						document.querySelector(`tr[data-id="${productId}"]`).remove();
+			// Remove the product row from the DOM
+			document.querySelector(`tr[data-id="${productId}"]`).remove();
 
-						// Recalculate the cart subtotal
-						recalculateCartSubtotal();
+			// Recalculate the cart subtotal
+			recalculateCartSubtotal();
 
-						displayCart();
-					};
+			displayCart();
+		};
 
-					// Add event listeners for buttons and inputs
-					const addEventListeners = () => {
-						document.querySelectorAll(".qty-btn").forEach(button => {
-							button.addEventListener("click", handleQuantityChange);
-						});
+		// Add event listeners for buttons and inputs
+		const addEventListeners = () => {
+			document.querySelectorAll(".qty-btn").forEach(button => {
+				button.addEventListener("click", handleQuantityChange);
+			});
 
-						document.querySelectorAll(".qty-input").forEach(input => {
-							input.addEventListener("input", handleQuantityInput);
-						});
+			document.querySelectorAll(".qty-input").forEach(input => {
+				input.addEventListener("input", handleQuantityInput);
+			});
 
-						document.querySelectorAll(".remove").forEach(button => {
-							button.addEventListener("click", removeCartItem);
-						});
-					};
+			document.querySelectorAll(".remove").forEach(button => {
+				button.addEventListener("click", removeCartItem);
+			});
+		};
 
-					updateCart();
+		updateCart();
 
-					displayCart();
+		displayCart();
 
-				});
-
-
+	});
 
 
-			</script>
+
+
+</script>
 
 </html>
